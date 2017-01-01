@@ -1,0 +1,9 @@
+<div *ngIf="week">
+  <h2>{{week.name}} details!</h2>
+  <div>
+    <label>id: </label>{{week.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="week.name" placeholder="name" />
+   </div>
+</div>

@@ -1,0 +1,29 @@
+{
+    "data" : [
+        {
+            "id" : 1,
+            "name" : "Week 1",
+            "type" : "result"
+        },
+        {
+            "id" : 2,
+            "name" : "Week 2",
+            "type" : "result"
+        },
+        {
+            "id" : 3,
+            "name" : "Week 3",
+            "type" : "result"
+        },
+        {
+            "id" : 4,
+            "name" : "Week 4",
+            "type" : "result"
+        },
+        {
+            "id" : 5,
+            "name" : "Week 5",
+            "type" : "play"
+        }
+    ]
+}
