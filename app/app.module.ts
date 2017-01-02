@@ -11,15 +11,13 @@ import { WeekService} from './models/week.service'
 
 /* Feature Modules */
 import { CoreModule } from './core/core.module';
-import { LoginModule } from './login/login.module';
 import { WeekDetailComponent }      from './week-detail/week-detail.component';
 
 @NgModule({
   imports:      [ 
         BrowserModule,  
         FormsModule,
-        HttpModule,
-        LoginModule,
+        HttpModule,      
         AppRoutingModule,
         CoreModule ],
   declarations: [ AppComponent, WeekDetailComponent ],

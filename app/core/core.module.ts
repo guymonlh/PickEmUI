@@ -7,6 +7,7 @@ import { EntityService } from './entity.service';
 import { ExceptionService } from './exception.service';
 import { MessageService } from './message.service';
 import { NavComponent } from './nav/nav.component';
+import { LoginComponent } from './login/login.component';
 
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { ModalModule } from './modal/modal.module';
@@ -20,13 +21,13 @@ import { ToastModule } from './toast/toast.module';
 @NgModule({
   imports: [
     CommonModule, FormsModule, RouterModule,
-    ModalModule, SpinnerModule, ToastModule
+    ModalModule, SpinnerModule, ToastModule  
   ],
   exports: [
     CommonModule, FormsModule, RouterModule,
-    ModalModule, SpinnerModule, ToastModule, [NavComponent]
+    ModalModule, SpinnerModule, ToastModule, [NavComponent, LoginComponent]
   ],
-  declarations: [NavComponent],
+  declarations: [NavComponent, LoginComponent],
   providers: [
     EntityService,
     ExceptionService,

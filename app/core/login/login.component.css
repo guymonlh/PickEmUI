@@ -1,0 +1,11 @@
+#login-button {
+  position: fixed;
+  right: 2em;
+  top: 1em;
+}
+
+#logout-button {
+  position: fixed;
+  right: 2em;
+  top: 1em;
+}
