@@ -4,6 +4,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 
 import { Week } from '../models/week.model';
 import { WeekService } from '../models/week.service';
+import { UserProfileService } from '../core/user-profile.service';
 
 @Component({
   moduleId: module.id,
@@ -16,8 +17,13 @@ export class WeekDetailComponent implements OnInit {
 
   constructor(
     private weekService: WeekService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private userProfileService: UserProfileService
   ) {}
+
+   public get isLoggedIn() : boolean {
+    return this.userProfileService.isLoggedIn;
+  }
 
   ngOnInit(): void {
     this.route.params
