@@ -45,11 +45,11 @@ export class NavComponent implements OnInit {
     });
   }
 
- onSelect(menuItem: Week): void { 
-    this.selectedItem = menuItem;
-    console.log("selected Id:" + this.selectedItem.id)
-    this.router.navigate(['/detail', this.selectedItem.id]);
-  }
+//  onSelect(menuItem: Week): void { 
+//     this.selectedItem = menuItem;
+//     console.log("selected Id:" + this.selectedItem.id)
+//     this.router.navigate(['/detail', this.selectedItem.id]);
+//   }
 
 
 }

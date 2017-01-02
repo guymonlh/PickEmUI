@@ -35,7 +35,7 @@ export class WeekService {
     //   .catch(this.handleError);
       return this.http.get(this.weeksUrl)
       .toPromise()
-      .then(response => response.json().data[id] as Week)
+      .then(response => response.json().data[id-1] as Week)
       .catch(this.handleError);
 
   }
