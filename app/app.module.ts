@@ -7,10 +7,11 @@ import { HttpModule } from '@angular/http';
 import './core/rxjs-extensions';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { WeekService} from './shared/week.service'
+import { WeekService} from './models/week.service'
 
 /* Feature Modules */
 import { CoreModule } from './core/core.module';
+import { LoginModule } from './login/login.module';
 import { WeekDetailComponent }      from './week-detail/week-detail.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { WeekDetailComponent }      from './week-detail/week-detail.component';
         BrowserModule,  
         FormsModule,
         HttpModule,
+        LoginModule,
         AppRoutingModule,
         CoreModule ],
   declarations: [ AppComponent, WeekDetailComponent ],

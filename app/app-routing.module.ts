@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, Routes, RouterModule } from '@angular/router';
 
 import { WeekDetailComponent }      from './week-detail/week-detail.component';
+import { LoginComponent } from './login/login.component';
 
 import { AuthGuard } from './core/auth-guard.service';
 import { CanDeactivateGuard } from './core/can-deactivate-guard.service';
@@ -19,6 +20,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
 *****************************************************************/
 const routes: Routes = [
      { path: '', pathMatch: 'full', redirectTo: 'app/app.module#AppModule', },
+      { path: 'login', component: LoginComponent },
 //   {
 //     path: 'admin',
 //     loadChildren: 'app/admin/admin.module#AdminModule',

@@ -5,7 +5,7 @@ import { MessageService } from '../message.service';
 import { ModalService } from '../modal/modal.service';
 
 import { Week } from '../../models/week.model';
-import { WeekService } from '../../shared/week.service';
+import { WeekService } from '../../models/week.service';
 
 
 @Component({

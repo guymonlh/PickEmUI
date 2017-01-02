@@ -3,7 +3,7 @@ import { Component, OnInit }      from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { Week } from '../models/week.model';
-import { WeekService } from '../shared/week.service';
+import { WeekService } from '../models/week.service';
 
 @Component({
   moduleId: module.id,
